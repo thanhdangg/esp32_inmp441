@@ -88,6 +88,19 @@ const char* password = "12345678";  // Mật khẩu WiFi
 2. Chọn board: Tools > Board > ESP32 Arduino > ESP32 Dev Module board
 3. Chọn cổng COM: Tools > Port (chọn cổng ESP32)
 4. Nạp code: Nhấn nút Upload (mũi tên sang phải)
+5. Giữ nút **BOOT** trên ESP32 trong khi code đang nạp code (Output của IDE sẽ hiện Connecting.....) cho đến khi xuất hiện dòng 
+```
+Writing at 0x00001000... (100 %)  
+```
+thì thả ra. Sau khi code nạp xong sẽ xuất hiện dòng: 
+```
+Wrote 1050624 bytes (679096 compressed) at 0x00010000 in 15.4 seconds (effective 547.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+``` 
+thì tiếp tục bấm nút **RST** (Reset) để bắt đầu chạy chương trình trên ESP32.
 
 # ✨ Giải thích hoạt động
 - Kết nối WiFi khi khởi động
