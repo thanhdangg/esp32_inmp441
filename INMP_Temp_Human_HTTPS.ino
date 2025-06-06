@@ -13,7 +13,7 @@ DHT dht(DHTPIN, DHTTYPE);
 
 const char* ssid = "Bee";
 const char* password = "12345678";
-const char* serverUrl = "http://13.213.71.17:5001/upload";
+const char* serverUrl = "http://13.229.80.5:5001/upload";
 
 const float TEMP_THRESHOLD = 2.0;   
 const float HUMIDITY_THRESHOLD = 5.0; 
